@@ -66,9 +66,16 @@ doneBtn.addEventListener('click', () => {
 
 muteBtn.addEventListener('click', () => {
     isMuted = !isMuted;
-    muteBtn.textContent = isMuted ? 'Unmute' : 'Mute';
-    muteBtn.style.backgroundColor = isMuted ? 'yellow' : 'cyan';
-    muteBtn.style.color = 'black';
+
+    if (isMuted) {
+        muteBtn.textContent = 'Unmute';
+        muteBtn.style.backgroundColor = 'yellow';
+        muteBtn.style.color = 'black';
+    } else {
+        muteBtn.textContent = 'Mute';
+        muteBtn.style.backgroundColor = 'red';
+        muteBtn.style.color = 'white';
+    }
 
     if (synth && synth.speaking) {
         synth.cancel();
