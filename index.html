@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J.A.R.V.I.S</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+  <!-- Modernizr (optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section id="JarvisLogoSection" class="mb-4">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="d-flex justify-content-center align-items-center logo-wrapper">
+          <div class="iron-man-logo-container" id="logo-container">
+            <img src="assets/Download-Iron-Man-Svg-Download-Iron-Man-Svg-Black-And-White-Iron-Man-Logo-Svg-Clipart-__953266_-PinC.svg" alt="Iron Man Logo" class="iron-man-logo" />
+            <div class="glow-layer"></div>
+          </div>
+        </div>
+
+        <!-- Chat Window -->
+        <div id="chat-window">
+          <div class="message system-message">Ask me anything</div>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div id="chat-input-container">
+          <button id="mute-button">Mute</button>
+          <input type="text" id="chat-input" placeholder="Ask me anything..." />
+          <button id="send-button">▶</button>
+          <button id="done-button">Done</button>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <!-- JARVIS Logic -->
+  <script src="main.js" defer></script>
+</body>
+
+</html>
